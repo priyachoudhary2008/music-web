@@ -1,20 +1,17 @@
 
-import { useState } from 'react'
 import './App.css'
 import Header from "./components/header/Header"
+import Footer from './components/footer/Footer'
 
 function App() {
- const [location, setLocation] = useState("")
 
   return (
     <>
-      <h1>App Components</h1>
+     
       <Header/>
-      <h2>{location}</h2>
+      <Footer/>
 
-      <input type="text" value={location} onChange={(e)=>{setLocation(e.target.value)}}/>
-     
-     
+      
 
     </>
   )

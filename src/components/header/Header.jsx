@@ -1,6 +1,9 @@
 
 import "./Header.css";
-import { BsBrowserEdge } from "react-icons/bs";
+import { BsBrowserEdge} from "react-icons/bs";
+import { IoIosHome } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
+import { GoBrowser } from "react-icons/go";
 
 
 function Header() {
@@ -9,23 +12,25 @@ function Header() {
       <div className="header-left">
         
         <span>
-        <BsBrowserEdge className="logo-icon" /><a href="#">My playlist</a>
+        <BsBrowserEdge className="logo-icon" />
         </span>
 
         <span>
-           <a href="#">Last Listening</a>
+         <IoIosHome className="home-icon" />
         </span>
       </div>
       
       <div className="search-bar">
-      
+         <FaSearch className="search-icon" />
         <input type="text" placeholder="What do you want to play?" />
+         <span className="divider">|</span>
+        <GoBrowser className="browser-image" />
       </div>
 
       <div className="header-right">
-        <a href="#">Premium</a>
-        <a href="#">Support</a>
-        <a href="#">Download</a>
+        <h3>Premium</h3>
+        <h3>Support</h3>
+        <h3>Download</h3>
         <span className="divider">|</span>
         <a href="#" className="install">
         
